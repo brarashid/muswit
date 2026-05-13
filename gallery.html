@@ -58,102 +58,22 @@
     4. Update data-category to match one of: education | training | community | civic | events
     5. To add more photos, copy any .gallery-item block and paste it inside .gallery-full-grid
   -->
-  <div class="gallery-filters">
-    <button class="filter-btn active" data-filter="all">All Photos</button>
-    <button class="filter-btn" data-filter="education">Education</button>
-    <button class="filter-btn" data-filter="training">Skills Training</button>
-    <button class="filter-btn" data-filter="community">Community</button>
-    <button class="filter-btn" data-filter="civic">Civic &amp; Diplomatic</button>
-    <button class="filter-btn" data-filter="events">Events</button>
-  </div>
 </section>
 
-<!-- GALLERY GRID -->
-<!-- 
-  ===========================
-  HOW TO REPLACE IMAGES:
-  Each gallery-item has:
-    src="URL_OR_FILE_PATH"   ← change to your image file
-    alt="description"         ← change to describe the photo
-    data-category="..."       ← keep one of: education, training, community, civic, events
-    data-caption="..."        ← update with real caption
-  ===========================
--->
 <section class="section" style="padding-top:32px;">
-  <div class="gallery-full-grid">
-
-    <!-- ITEM 1 — Large -->
-    <div class="gallery-item gallery-item-large" data-category="education" data-caption="Annual Graduation Ceremony 2024 — Over 200 women received their certificates">
-      <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=900&q=80" alt="Annual Graduation Ceremony 2024">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Annual Graduation Ceremony 2024</span></div>
-    </div>
-
-    <!-- ITEM 2 -->
-    <div class="gallery-item" data-category="training" data-caption="Tailoring & Fashion Design TVET Program — Cohort 7">
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Tailoring TVET Program">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>TVET: Tailoring &amp; Fashion Design</span></div>
-    </div>
-
-    <!-- ITEM 3 -->
-    <div class="gallery-item" data-category="civic" data-caption="MOU Signing with Ministry of Education 2023">
-      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="MOU Signing Ceremony">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>MOU Signing — Ministry of Education</span></div>
-    </div>
-
-    <!-- ITEM 4 -->
-    <div class="gallery-item" data-category="training" data-caption="ICT Digital Skills Bootcamp — Module 3: Web Fundamentals">
-      <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="ICT Digital Skills Bootcamp">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>ICT Digital Skills Bootcamp</span></div>
-    </div>
-
-    <!-- ITEM 5 — Large -->
-    <div class="gallery-item gallery-item-large" data-category="community" data-caption="Community Outreach Day — Health & Civic Education, Northern Region">
-      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=900&q=80" alt="Community Outreach Day">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Community Outreach Day — Northern Region</span></div>
-    </div>
-
-    <!-- ITEM 6 -->
-    <div class="gallery-item" data-category="education" data-caption="School Supplies Distribution — Back to School Drive 2023">
-      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="School Supplies Distribution">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>School Supplies Distribution</span></div>
-    </div>
-
-    <!-- ITEM 7 -->
-    <div class="gallery-item" data-category="civic" data-caption="UN Women Forum — MUSWIT Delegate Presentation, Geneva 2024">
-      <img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=600&q=80" alt="UN Women Forum">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>UN Women Forum, Geneva 2024</span></div>
-    </div>
-
-    <!-- ITEM 8 -->
-    <div class="gallery-item" data-category="events" data-caption="Annual MUSWIT Women's Empowerment Summit 2024">
-      <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Women's Empowerment Summit">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Annual Women's Empowerment Summit</span></div>
-    </div>
-
-    <!-- ITEM 9 -->
-    <div class="gallery-item" data-category="training" data-caption="Catering & Hospitality Vocational Training — Cohort 4">
-      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Catering & Hospitality TVET">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Catering &amp; Hospitality TVET</span></div>
-    </div>
-
-    <!-- ITEM 10 — Large -->
-    <div class="gallery-item gallery-item-large" data-category="events" data-caption="MUSWIT Awards Night 2023 — Celebrating Women Who Lead">
-      <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=900&q=80" alt="MUSWIT Awards Night 2023">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>MUSWIT Awards Night 2023 — Celebrating Women Who Lead</span></div>
-    </div>
-
-    <!-- ITEM 11 -->
-    <div class="gallery-item" data-category="community" data-caption="Women's Health Education Campaign — Free Screening Day">
-      <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80" alt="Women's Health Education Campaign">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Women's Health Education Campaign</span></div>
-    </div>
-
-    <!-- ITEM 12 -->
-    <div class="gallery-item" data-category="education" data-caption="Girls' Scholarship Award Ceremony — 75 Beneficiaries, 2024">
-      <img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=600&q=80" alt="Girls' Scholarship Award Ceremony">
-      <div class="gallery-overlay"><i class="fas fa-search-plus"></i><span>Girls' Scholarship Award Ceremony</span></div>
-    </div>
-
+  <div class="gallery-simple-grid">
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=600&q=80" alt="Gallery photo"></div>
   </div>
 </section>
 
@@ -256,24 +176,5 @@
 </div>
 
 <script src="script.js"></script>
-<script>
-// Gallery filter
-const filterBtns = document.querySelectorAll('.filter-btn');
-const galleryItems = document.querySelectorAll('.gallery-item[data-category]');
-filterBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    filterBtns.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.getAttribute('data-filter');
-    galleryItems.forEach(item => {
-      if (filter === 'all' || item.getAttribute('data-category') === filter) {
-        item.classList.remove('hidden');
-      } else {
-        item.classList.add('hidden');
-      }
-    });
-  });
-});
-</script>
 </body>
 </html>
