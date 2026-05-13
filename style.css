@@ -161,6 +161,8 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
   background-size: cover;
   background-position: center;
   opacity: 0;
+  filter: blur(4px);
+  transform: scale(1.04);
   transition: opacity 1.2s ease;
 }
 .hero-slideshow .slide.active {
@@ -170,7 +172,7 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.92) 0%, rgba(253,218,221,0.82) 50%, rgba(255,79,163,0.25) 100%);
+  background: linear-gradient(135deg, rgba(0,0,0,0.78) 0%, rgba(20,0,10,0.74) 50%, rgba(255,79,163,0.45) 100%);
 }
 .hero-content {
   max-width: 1200px;
@@ -188,18 +190,18 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--pink-pale);
-  border: 1px solid var(--pink-mid);
-  color: var(--pink-dark);
+  background: rgba(255,79,163,0.22);
+  border: 1px solid rgba(255,79,163,0.55);
+  color: #fff;
   padding: 7px 16px;
   border-radius: var(--radius-full);
   font-weight: 700;
   font-size: 0.85rem;
   margin-bottom: 20px;
 }
-.hero-title { margin-bottom: 18px; color: var(--black); }
+.hero-title { margin-bottom: 18px; color: #fff; }
 .hero-title span { color: var(--pink-main); }
-.hero-subtitle { margin-bottom: 32px; font-size: 1.05rem; }
+.hero-subtitle { margin-bottom: 32px; font-size: 1.05rem; color: rgba(255,255,255,0.88); }
 .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
 .hero-visual { animation: fadeInRight 0.9s ease 0.2s both; }
 .hero-card {
