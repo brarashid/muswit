@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"\\(Get-Content index.html\\) -replace 'style=\\\\\"border-radius:8px;\\\\\"', '' | Set-Content index.html; \\(Get-Content about.html\\) -replace 'style=\\\\\"border-radius:8px;\\\\\"', '' | Set-Content about.html; \\(Get-Content civic.html\\) -replace 'style=\\\\\"border-radius:8px;\\\\\"', '' | Set-Content civic.html; \\(Get-Content gallery.html\\) -replace 'style=\\\\\"border-radius:8px;\\\\\"', '' | Set-Content gallery.html; \\(Get-Content contact.html\\) -replace 'style=\\\\\"border-radius:8px;\\\\\"', '' | Set-Content contact.html\")"
+    ]
+  }
+}

@@ -260,11 +260,16 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
 
 /* ===== CIVIC PAGE HERO ===== */
 .page-hero-civic {
-  background-image: url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1600&q=80');
+  background-image: url('muswitgh pics (2).jpeg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 /* ===== GALLERY PAGE HERO ===== */
 .page-hero-gallery {
-  background-image: url('https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=1600&q=80');
+  background-image: url('muswitgh pics (1).jpeg');
+  background-size: cover;
+  background-position: center 20%;
 }
 /* ===== CONTACT PAGE HERO ===== */
 .page-hero-contact {
@@ -272,7 +277,7 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
 }
 /* ===== ABOUT PAGE HERO ===== */
 .page-hero-about {
-  background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1600&q=80');
+  background-image: url('muswitgh pics (18).jpeg');
 }
 
 /* ===== SECTION BASE ===== */
@@ -496,15 +501,6 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
 .donation-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 
 /* ===== PARTNERS CAROUSEL ===== */
-.partner-logo{
-  padding: 8px;
-  border-radius: 10px;
-}
-
-.partner-logo img{
-  border-radius: 8px;
-}
-
 .partners-section {
   padding: 60px 0;
   background: var(--pink-pale);
@@ -521,42 +517,22 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
   animation: carousel-scroll 28s linear infinite;
   padding: 10px 0;
 }
-/* Pause animation on hover */
-.carousel-wrapper:hover .carousel-track{
-  animation-play-state: paused;
-}
-
-/* Partner Logo - No Wrapper Box + Same Size */
-.partner-logo{
-  width: 180px;
-  height: 90px;
-  background: transparent;
-  border-radius: 0;
-  padding: 0;
-  box-shadow: none;
+.carousel-wrapper:hover .carousel-track { animation-play-state: paused; }
+.partner-logo {
+  padding: 8px;
+  border-radius: 10px;
   flex-shrink: 0;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: var(--transition);
 }
-
-/* All logos same size */
-.partner-logo img{
-  width: 1600px;
-  height: 700px;
+.partner-logo img {
+  height: 90px;
+  width: auto;
   object-fit: contain;
 }
-
-/* Hover effect */
-.partner-logo:hover{
-  transform: scale(1.05);
-}
-}
-.partner-logo i { font-size: 1.3rem; }
-.partner-logo:hover { filter: grayscale(0); transform: scale(1.05); box-shadow: var(--shadow-hover); color: var(--pink-main); }
+.partner-logo:hover { filter: grayscale(0); transform: scale(1.05); box-shadow: var(--shadow-hover); }
 @keyframes carousel-scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
@@ -728,14 +704,14 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
 .gallery-simple-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 6px;
+  gap: 3px;
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 16px;
 }
 .gallery-simple-item {
   overflow: hidden;
-  border-radius: 4px;
+  border-radius: 10px;
   aspect-ratio: 1/1;
   cursor: pointer;
   background: #f0f0f0;
