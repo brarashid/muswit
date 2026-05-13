@@ -60,20 +60,27 @@
   -->
 </section>
 
-<section class="section" style="padding-top:32px;">
+<section class="section" style="padding-top:24px;">
   <div class="gallery-simple-grid">
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1590650046871-92c887180603?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1584515933487-779824d29309?w=600&q=80" alt="Gallery photo"></div>
-    <div class="gallery-simple-item"><img src="https://images.unsplash.com/photo-1607748862156-7c548e7e98f4?w=600&q=80" alt="Gallery photo"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (1).jpeg" alt="MUSWIT photo 1"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (8).jpeg" alt="MUSWIT photo 8"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (15).jpeg" alt="MUSWIT photo 15"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (22).jpeg" alt="MUSWIT photo 22"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (29).jpeg" alt="MUSWIT photo 29"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (36).jpeg" alt="MUSWIT photo 36"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (43).jpeg" alt="MUSWIT photo 43"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (50).jpeg" alt="MUSWIT photo 50"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (4).jpeg" alt="MUSWIT photo 4"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (11).jpeg" alt="MUSWIT photo 11"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (18).jpeg" alt="MUSWIT photo 18"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (25).jpeg" alt="MUSWIT photo 25"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (32).jpeg" alt="MUSWIT photo 32"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (39).jpeg" alt="MUSWIT photo 39"></div>
+    <div class="gallery-simple-item"><img src="muswitgh pics (46).jpeg" alt="MUSWIT photo 46"></div>
+    <div class="gallery-simple-item gallery-simple-item--more" data-index="15">
+      <img src="muswitgh pics (53).jpeg" alt="MUSWIT photo 53">
+      <div class="gallery-more-overlay">+38 more</div>
+    </div>
   </div>
 </section>
 
@@ -167,14 +174,83 @@
 </footer>
 
 <!-- LIGHTBOX -->
-<div class="lightbox">
+<div class="lightbox" id="galleryLightbox">
+  <button class="lb-nav lb-prev">&#8249;</button>
   <div class="lightbox-content">
     <button class="lightbox-close"><i class="fas fa-times"></i></button>
     <img class="lightbox-img" src="" alt="Gallery image">
-    <div class="lightbox-caption"></div>
+    <div class="lb-counter"></div>
   </div>
+  <button class="lb-nav lb-next">&#8250;</button>
 </div>
 
 <script src="script.js"></script>
+<script>
+(function () {
+  const allImages = [
+    'muswitgh pics (1).jpeg','muswitgh pics (2).jpeg','muswitgh pics (3).jpeg',
+    'muswitgh pics (4).jpeg','muswitgh pics (5).jpeg','muswitgh pics (6).jpeg',
+    'muswitgh pics (7).jpeg','muswitgh pics (8).jpeg','muswitgh pics (9).jpeg',
+    'muswitgh pics (10).jpeg','muswitgh pics (11).jpeg','muswitgh pics (12).jpeg',
+    'muswitgh pics (13).jpeg','muswitgh pics (14).jpeg','muswitgh pics (15).jpeg',
+    'muswitgh pics (16).jpeg','muswitgh pics (17).jpeg','muswitgh pics (18).jpeg',
+    'muswitgh pics (19).jpeg','muswitgh pics (20).jpeg','muswitgh pics (21).jpeg',
+    'muswitgh pics (22).jpeg','muswitgh pics (23).jpeg','muswitgh pics (24).jpeg',
+    'muswitgh pics (25).jpeg','muswitgh pics (26).jpeg','muswitgh pics (27).jpeg',
+    'muswitgh pics (28).jpeg','muswitgh pics (29).jpeg','muswitgh pics (30).jpeg',
+    'muswitgh pics (31).jpeg','muswitgh pics (32).jpeg','muswitgh pics (33).jpeg',
+    'muswitgh pics (34).jpeg','muswitgh pics (35).jpeg','muswitgh pics (36).jpeg',
+    'muswitgh pics (37).jpeg','muswitgh pics (38).jpeg','muswitgh pics (39).jpeg',
+    'muswitgh pics (40).jpeg','muswitgh pics (41).jpeg','muswitgh pics (42).jpeg',
+    'muswitgh pics (43).jpeg','muswitgh pics (44).jpeg','muswitgh pics (45).jpeg',
+    'muswitgh pics (46).jpeg','muswitgh pics (47).jpeg','muswitgh pics (48).jpeg',
+    'muswitgh pics (49).jpeg','muswitgh pics (50).jpeg','muswitgh pics (51).jpeg',
+    'muswitgh pics (52).jpeg','muswitgh pics (53).jpeg'
+  ];
+
+  const lb      = document.getElementById('galleryLightbox');
+  const lbImg   = lb.querySelector('.lightbox-img');
+  const lbCtr   = lb.querySelector('.lb-counter');
+  const closeBtn = lb.querySelector('.lightbox-close');
+  const prevBtn  = lb.querySelector('.lb-prev');
+  const nextBtn  = lb.querySelector('.lb-next');
+  let cur = 0;
+
+  function show(index) {
+    cur = (index + allImages.length) % allImages.length;
+    lbImg.src = allImages[cur];
+    lbCtr.textContent = (cur + 1) + ' / ' + allImages.length;
+  }
+
+  function open(index) {
+    show(index);
+    lb.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('active');
+    document.body.style.overflow = '';
+    setTimeout(() => { lbImg.src = ''; }, 300);
+  }
+
+  // Map each thumbnail to its real index in allImages
+  const thumbMap = [0,7,14,21,28,35,42,49,3,10,17,24,31,38,45,52];
+  document.querySelectorAll('.gallery-simple-item').forEach((item, i) => {
+    item.addEventListener('click', () => open(thumbMap[i]));
+  });
+
+  closeBtn.addEventListener('click', close);
+  prevBtn.addEventListener('click',  () => show(cur - 1));
+  nextBtn.addEventListener('click',  () => show(cur + 1));
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lb.classList.contains('active')) return;
+    if (e.key === 'Escape')     close();
+    if (e.key === 'ArrowLeft')  show(cur - 1);
+    if (e.key === 'ArrowRight') show(cur + 1);
+  });
+})();
+</script>
 </body>
 </html>
