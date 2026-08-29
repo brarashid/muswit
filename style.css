@@ -589,50 +589,173 @@ p { font-size: 1rem; font-weight: 500; color: var(--gray); }
 
 /* ===== PRIVACY POLICY ===== */
 .policy-section {
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 60px 5% !important;
 }
+
+.policy-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+}
+
+.policy-toc {
+  position: sticky;
+  top: 100px;
+  background: linear-gradient(135deg, var(--pink-pale) 0%, #fef5f7 100%);
+  border: 2px solid var(--pink-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  height: fit-content;
+  box-shadow: 0 4px 16px rgba(255, 79, 163, 0.08);
+}
+
+.policy-toc h3 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--pink-main);
+  margin: 0 0 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 2px solid var(--pink-main);
+  padding-bottom: 12px;
+}
+
+.policy-toc ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.policy-toc li {
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+}
+
+.policy-toc li a {
+  color: var(--gray);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.policy-toc li a:hover {
+  color: var(--pink-main);
+  background: rgba(255, 79, 163, 0.08);
+  padding-left: 12px;
+}
+
 .policy-content {
   background: #fff;
   border-radius: var(--radius-lg);
   padding: 40px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
   border: 1px solid var(--pink-light);
 }
-.policy-content h2 {
+
+.policy-intro-badge {
+  background: linear-gradient(135deg, rgba(255, 79, 163, 0.1) 0%, rgba(255, 79, 163, 0.05) 100%);
+  border-left: 4px solid var(--pink-main);
+  padding: 18px 22px;
+  border-radius: 8px;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.policy-intro-badge i {
   font-size: 1.4rem;
-  margin-top: 32px;
-  margin-bottom: 16px;
+  color: var(--pink-main);
+  flex-shrink: 0;
+}
+
+.policy-content section {
+  margin-bottom: 36px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--pink-light);
+}
+
+.policy-content section:last-child {
+  border-bottom: none;
+}
+
+.policy-content h2 {
+  font-size: 1.45rem;
+  margin: 0 0 16px 0;
   color: var(--black);
-  border-top: 2px solid var(--pink-light);
-  padding-top: 20px;
+  font-weight: 800;
+  border-left: 4px solid var(--pink-main);
+  padding-left: 14px;
 }
-.policy-content h2:first-child {
-  border-top: none;
-  margin-top: 0;
-  padding-top: 0;
-}
+
 .policy-content h3 {
   font-size: 1.1rem;
-  margin-top: 20px;
-  margin-bottom: 12px;
+  margin: 24px 0 12px 0;
   color: var(--pink-main);
   font-weight: 700;
 }
+
 .policy-content p {
   margin-bottom: 14px;
-  font-size: 0.95rem;
+  font-size: 0.97rem;
+  line-height: 1.8;
+  color: var(--gray);
+}
+
+.policy-content ul, .policy-content ol {
+  margin: 14px 0 14px 32px;
+  font-size: 0.97rem;
+}
+
+.policy-content ul li, .policy-content ol li {
+  margin-bottom: 10px;
+  color: var(--gray);
   line-height: 1.7;
-  color: var(--gray);
 }
-.policy-content ul {
-  margin: 14px 0 14px 24px;
-  font-size: 0.95rem;
+
+.policy-content a {
+  color: var(--pink-main);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
 }
-.policy-content ul li {
+
+.policy-content a:hover {
+  border-bottom-color: var(--pink-main);
+}
+
+.policy-content strong {
+  color: var(--black);
+  font-weight: 700;
+}
+
+.policy-footer-badge {
+  background: linear-gradient(135deg, var(--pink-pale) 0%, var(--pink-light) 100%);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  margin-top: 40px;
+  text-align: center;
+  border: 1px solid var(--pink-mid);
+  box-shadow: 0 4px 24px rgba(255, 79, 163, 0.12);
+}
+
+.policy-footer-badge h3 {
+  margin-top: 0;
   margin-bottom: 8px;
-  color: var(--gray);
-  list-style-type: disc;
+  font-size: 1.2rem;
+}
+
+.policy-footer-badge p {
+  margin: 8px 0;
 }
 
 /* ===== ABOUT VALUES ===== */
@@ -1063,8 +1186,10 @@ textarea { resize: vertical; min-height: 120px; }
   .page-hero { padding: 110px 5% 60px; }
   
   /* POLICY */
+  .policy-container { grid-template-columns: 1fr; }
+  .policy-toc { position: static; margin-bottom: 24px; }
   .policy-content { padding: 24px; }
-  .policy-content h2 { font-size: 1.2rem; margin-top: 24px; }
+  .policy-content h2 { font-size: 1.25rem; }
   .policy-content h3 { font-size: 1rem; }
   
   /* GRIDS */
