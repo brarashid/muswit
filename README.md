@@ -1,10 +1,10 @@
-# MUSWIT — Muslim Women in Teaching
+# MUSWIT — Empowering Women Through Education
 
-Official website for **MUSWIT**, a non-governmental organization dedicated to empowering women and girls through education, vocational training, and community engagement in Ghana.
+Official website for **MUSWIT**, a non-governmental organization dedicated to empowering vulnerable women and girls through education, vocational training, and community engagement in Ghana.
 
 ## About
 
-MUSWIT (Muslim Women in Teaching) has been transforming lives since 2015. The organization works to uplift women by providing access to education, skills development, and civic opportunities — with over 2,000 women empowered and 1,500+ skills training graduates to date.
+MUSWIT has been transforming lives since 2015. The organization works to uplift vulnerable women and girls by providing access to education, skills development, and civic opportunities — with over 2,000 women empowered and 1,500+ skills training graduates to date.
 
 ## Pages
 
@@ -69,4 +69,4 @@ To get involved, donate, or partner with MUSWIT, visit the [Contact page](contac
 
 ---
 
-&copy; 2026 MUSWIT — Muslim Women in Teaching. All rights reserved.
+&copy; 2026 MUSWIT — Empowering Women Through Education. All rights reserved.
